@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>NuCamp: A Better Way To Camp</title>
+</head>
+    <body>
+        <div class="row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-light">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="row">
+                                <div class="form-group">
+                                <label class="col-form-label" for="">Number of Campers</label>
+                                <div class="col-sm-6">
+                                <select name="numCampers" id="numCampers">
+                                    <option value="select">Select...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-form-label">
+                                <label class="col-sm-6" for="date">Date</label>
+                                <div class="col col-sm-6"> 
+                                <input type="text" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control" />
+                            </div>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+                        </form>
+                </div>
+            </div>    
+        </div>
+    </div> 
+    </body>
+</html>
